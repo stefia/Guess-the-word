@@ -1,0 +1,107 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+color: white;
+}
+
+body {
+    height: 100vh;
+    background-image: url('img/bg-guess-the-word.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 10px;
+    background-color: #252735;
+    border-radius: 15px;
+}
+.logo {
+    width: 150px;
+}
+.scramble {
+    width: 90%;
+    height: 15%;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #4A5567;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 4px 0px 0px #030616;
+    border-radius: 5px;
+}
+.tries_wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 400px;
+    justify-content: space-around;
+    
+}
+.tries, .mistakes {
+    display: flex;
+    align-items: center;
+    
+}
+.mistakes {
+    min-width: 100px;
+
+
+}
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #4A5567;
+    margin-left: 5px;
+}
+.active {
+    background-color: #7b248a;
+}
+.word_wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.word_input {
+   background-color: #252735;
+   border: 2px solid #4A5567;
+   border-radius: 5px;
+   width: 40px;
+   height: 40px;
+   font-size: 20px;
+   text-align: center;
+}
+.button_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+button {
+    margin-top: 50px;
+    background-color: #C951E7;
+    filter: drop-shadow(0px 4px 0px #7b248a);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 24px;
+}
+.word_input:focus {
+    outline: none;
+    border-color: violet;
+}
+.wrong {
+    border-color: red;
+    color: red;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Guess The Word Game</title>
+
+  </head>
+  <body>
+  <div class="container">
+    <img src="img/word-scramblle-logo.svg" alt="" class="logo">
+    <div id="scramble" class="scramble">
+
+    </div>
+    <div class="tries_wrapper">
+      <div class="tries">
+        <p>Tries: (<p id="tries_number">0</p>/5)</p>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <div class="mistakes">
+        <p>Mistakes:</p>
+        <p class="mistakes_text">
+
+        </p>
+      </div>
+    </div>
+    <div id="word_wrapper" class="word_wrapper">
+
+    </div>
+    <div class="button_wrapper">
+        <button id="random">Random</button>
+        <button id="reset">Reset</button>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+  </body>
+</html>
